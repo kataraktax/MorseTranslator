@@ -35,26 +35,22 @@ public class DataModel {
         String fileNamePhonetic = "phoneticAlphabet.txt";
         Path path2 = Paths.get(fileNamePhonetic);
 
-        String input1;
-        try (BufferedReader bufferedReader1 = Files.newBufferedReader(path1)) {
-            while ((input1 = bufferedReader1.readLine()) != null) {
-                String[] inputStringArr = input1.split(",");
-                String key = inputStringArr[0];
-                String value = inputStringArr[1];
+        readDataFromFile(path1, morseData);
+        readDataFromFile(path2, phoneticData);
+    }
 
-                morseData.put(key, value);
-            }
-        }
-        String input2;
-        try (BufferedReader bufferedReader2 = Files.newBufferedReader(path2)) {
-            while ((input2 = bufferedReader2.readLine()) != null) {
-                String[] inputStringArr = input2.split(",");
-                String key = inputStringArr[0];
-                String value = inputStringArr[1];
+    public void readDataFromFile(Path path, HashMap hashMap) throws IOException{
+        String input;
+            try(BufferedReader bufferedReader = Files.newBufferedReader(path)) {
+                while ((input = bufferedReader.readLine()) != null){
+                    String[] inputStringArr = input.split(",");
+                    String key = inputStringArr[0];
+                    String value = inputStringArr[1];
 
-                phoneticData.put(key, value);
+                    hashMap.put(key,value);
+                }
             }
-        }
+
     }
 }
 
