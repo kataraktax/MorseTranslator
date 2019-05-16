@@ -39,7 +39,7 @@ public class DataModel {
         readDataFromFile(path2, phoneticData);
     }
 
-    private void readDataFromFile(Path path, HashMap hashMap) throws IOException{
+    private void readDataFromFile(Path path, HashMap<String, String> hashMap) throws IOException{
         String input;
             try(BufferedReader bufferedReader = Files.newBufferedReader(path)) {
                 while ((input = bufferedReader.readLine()) != null){
