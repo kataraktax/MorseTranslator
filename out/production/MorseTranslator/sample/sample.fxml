@@ -27,7 +27,7 @@
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
-             <TextField fx:id="userInput" layoutX="126.0" layoutY="190.0" onKeyReleased="#handleKeyReleased" prefHeight="25.0" prefWidth="300.0" />
+             <TextField fx:id="userInput" layoutX="126.0" layoutY="190.0"  prefHeight="25.0" prefWidth="300.0" />
              <Label layoutX="126.0" layoutY="272.0" prefHeight="17.0" prefWidth="300.0" text="Text converted to morse code: " textFill="WHITE">
                <font>
                   <Font name="Georgia" size="14.0" />

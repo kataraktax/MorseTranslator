@@ -43,34 +43,33 @@ public class Controller {
                 }
             }
     });
-    }
+        userInput.setOnKeyReleased(event -> {
+            String input = userInput.getText().toUpperCase();
+            String convertedStringMorse = "";
+            String convertedStringNATO = "";
 
-    @FXML
-    public void handleKeyReleased(){
-        String input = userInput.getText().toUpperCase();
-//        System.out.println(input);
-        String convertedStringMorse = "";
-        String convertedStringNATO = "";
-
-        if (input.length() == 1){
-            if (dataModel.getMorseData().containsKey(input) && dataModel.getPhoneticData().containsKey(input)){
-                convertedStringMorse = dataModel.getMorseData().get(input);
-                convertedStringNATO = dataModel.getPhoneticData().get(input);
-//                System.out.println(convertedStringMorse + convertedStringNATO);
-                convertedTextMorse.setText(convertedStringMorse);
-                convertedTextPhonetic.setText(convertedStringNATO);
-            }
-        } else if (input.length() > 1){
-            for(int i = 0; i < input.length(); i++){
-                String temp = String.valueOf(input.charAt(i));
-//                System.out.println(temp + "temp");
-                if(dataModel.getMorseData().containsKey(temp) && dataModel.getPhoneticData().containsKey(temp)){
-                    convertedStringMorse += dataModel.getMorseData().get(temp) + " , ";
-                    convertedStringNATO += dataModel.getPhoneticData().get(temp) + " ";
+            if (input.length() == 1){
+                if (dataModel.getMorseData().containsKey(input) && dataModel.getPhoneticData().containsKey(input)){
+                    convertedStringMorse = dataModel.getMorseData().get(input);
+                    convertedStringNATO = dataModel.getPhoneticData().get(input);
                     convertedTextMorse.setText(convertedStringMorse);
                     convertedTextPhonetic.setText(convertedStringNATO);
                 }
+            } else if (input.length() > 1){
+                for(int i = 0; i < input.length(); i++){
+                    String temp = String.valueOf(input.charAt(i));
+                    if(dataModel.getMorseData().containsKey(temp) && dataModel.getPhoneticData().containsKey(temp)){
+                        convertedStringMorse += dataModel.getMorseData().get(temp) + " , ";
+                        convertedStringNATO += dataModel.getPhoneticData().get(temp) + " ";
+                        convertedTextMorse.setText(convertedStringMorse);
+                        convertedTextPhonetic.setText(convertedStringNATO);
+                    }
+                }
             }
-        }
+
+        });
+
     }
 }
+
+
