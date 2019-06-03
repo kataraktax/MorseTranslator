@@ -4,21 +4,21 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #a4a4a4; -fx-border-color: black; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <children>
+
       <Hyperlink fx:id="wikipediaLink" layoutX="723.0" layoutY="397.0" prefHeight="23.0" prefWidth="194.0" style="-fx-background-color: white;" text="Samuel Morse - wikipedia..." underline="true">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Hyperlink>
       <AnchorPane minHeight="600.0" minWidth="550.0" prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #757575;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="1.0">
-         <children>
+
              <Label layoutX="28.0" layoutY="72.0" lineSpacing="2.0" prefHeight="104.0" prefWidth="499.0" text="Morse Code Translator - to translate text to Morse or NATO Phonetic alphabet,  just type letters or numbers to box, program will place the translated text in the bottom boxes." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
                <opaqueInsets>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
@@ -27,7 +27,7 @@
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
-             <TextField fx:id="userInput" layoutX="126.0" layoutY="190.0"  prefHeight="25.0" prefWidth="300.0" />
+             <TextField fx:id="userInput" layoutX="126.0" layoutY="190.0" prefHeight="25.0" prefWidth="300.0" promptText="type your text here..." />
              <Label layoutX="126.0" layoutY="272.0" prefHeight="17.0" prefWidth="300.0" text="Text converted to morse code: " textFill="WHITE">
                <font>
                   <Font name="Georgia" size="14.0" />
@@ -49,24 +49,33 @@
                </font>
             </Label>
             <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="24.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
-               <image>
+
                   <Image url="@assets/morse-code.png" />
-               </image>
+
             </ImageView>
             <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="24.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
-               <image>
+
                   <Image url="@assets/nato.png" />
-               </image>
+
             </ImageView>
-         </children>
+
          <padding>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </padding>
+         <effect>
+            <DropShadow />
+         </effect>
       </AnchorPane>
       <ImageView fitHeight="400.0" fitWidth="519.0" layoutX="567.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
+
             <Image url="@assets/Samuel_Morse.jpg" />
-         </image>
+
+         <effect>
+            <DropShadow />
+         </effect>
       </ImageView>
-   </children>
+
+   <effect>
+      <DropShadow />
+   </effect>
 </AnchorPane>
