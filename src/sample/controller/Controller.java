@@ -1,10 +1,10 @@
-package sample;
+package sample.controller;
 
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import sample.datamodel.DataModel;
 
 import java.awt.*;
@@ -16,7 +16,7 @@ import java.net.URISyntaxException;
 public class Controller {
 
     @FXML
-    private TextField userInput;
+    private JFXTextField userInput;
     @FXML
     private Label convertedTextMorse;
     @FXML
@@ -32,6 +32,7 @@ public class Controller {
             dataModel.loadsData();
         } catch (IOException e){
             e.printStackTrace();
+
         }
 
         wikipediaLink.setOnAction(event -> {
