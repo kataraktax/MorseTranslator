@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16d2eb87-9a33-465e-b3d5-5f20c353c6f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MorseTranslator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MorseTranslator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MorseTranslator/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MorseTranslator/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MorseTranslator/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MorseTranslator/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MorseTranslator/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MorseTranslator/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/view/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,6 +146,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marek_cznrvyu\OneDrive\Pulpit\MorseTranslator\src\sample\view" />
       <recent name="C:\Users\marek_cznrvyu\OneDrive\Pulpit\MorseTranslator\src\sample\assets" />
     </key>
   </component>
@@ -317,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559595011413</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="090619 2240&#10;little management with packages">
+      <created>1560113120488</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560113120488</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -332,7 +332,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50047845" side_tool="true" weight="0.3295711" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49760765" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49760765" weight="0.32849163" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4985646" weight="0.326257" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -385,7 +385,8 @@
     <MESSAGE value="new GUI with icon, photo of Samuel Morse and hyperlink to wikipedia" />
     <MESSAGE value="2nd commit" />
     <MESSAGE value="3rd" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd" />
+    <MESSAGE value="090619 2240&#10;little management with packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="090619 2240&#10;little management with packages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/view/sample.fxml">
