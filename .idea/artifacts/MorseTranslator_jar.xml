@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="MorseTranslator:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/MorseTranslator_jar</output-path>
-    <root id="archive" name="MorseTranslator.jar">
-      <element id="module-output" name="MorseTranslator" />
-    </root>
-  </artifact>
-</component>
